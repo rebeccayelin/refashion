@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Refashion: Reconfigurable Garments via Modular Design" name="description"/>
+<meta content="Rebecca Lin, Michal Lukáč, Mackenzie Leake" name="author"/>
+<meta content="fashion, modular design, reconfigurable garments, computational design, digital fabrication" name="keywords"/>
+<meta content="Refashion: Reconfigurable Garments via Modular Design" property="og:title"/>
+<meta content="Refashion: Reconfigurable Garments via Modular Design" property="og:description"/>
+<meta content="article" property="og:type"/>
+<title>Refashion: Reconfigurable Garments via Modular Design</title>
+
+<link href="assets/css/main.css" rel="stylesheet"/>
+
+
+<link href="https://rebeccayelin.github.io/refashion/" rel="canonical"/></head>
+<body>
+<canvas aria-hidden="true" class="grid-background" id="grid-background"></canvas>
+<header class="site-header" role="banner">
+<div class="hero">
+<p class="eyebrow"><time datetime="2025">UIST 2025</time></p>
+<h1>
+<span class="title-mark">Refashion</span>
+<span class="title-main">Reconfigurable Garments via Modular Design</span>
+</h1>
+<div class="paper-meta">
+<div class="authors" role="contentinfo">
+<h2 class="visually-hidden">Authors</h2>
+<ul class="authors-list">
+<li>
+<a href="https://rebeccayelin.github.io/">Rebecca Lin</a><sup>1</sup>
+</li>
+<li>
+<a href="https://scholar.google.com/citations?user=_dVzmiYAAAAJ">Michal Lukáč</a><sup>2</sup>
+</li>
+<li>
+<a href="https://mackenzieleake.com/">Mackenzie Leake</a><sup>2</sup>
+</li>
+</ul>
+</div>
+<div class="affiliations">
+<h2 class="visually-hidden">Affiliations</h2>
+<ul class="institutions-list">
+<li><sup>1</sup>MIT CSAIL</li>
+<li><sup>2</sup>Adobe Research</li>
+</ul>
+</div>
+</div>
+<nav aria-label="Paper resources" class="paper-links" role="navigation">
+<ul class="links-list">
+<li>
+<a aria-label="View PDF" class="btn" href="assets/pdf/refashion_uist25.pdf">
+<span>PDF</span>
+</a>
+</li>
+<li>
+<a class="btn" href="https://news.mit.edu/2025/refashion-software-designs-eco-friendly-clothing-that-can-reassemble-new-items-1017">
+<span>MIT News</span>
+</a>
+</li>
+<li>
+<a aria-label="View on MIT MAD" class="btn" href="https://mad.mit.edu/projects/refashion-a-toolkit-for-modular-and-reconfigurable-clothing">
+<span>MIT MAD</span>
+</a>
+</li>
+<li>
+<a class="btn" href="https://dl.acm.org/doi/10.1145/3746059.3747632">
+<span>DOI</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="content" role="main">
+<figure class="teaser-figure">
+<picture>
+<source srcset="assets/images/teaser.webp" type="image/webp"/>
+<img alt="" height="600" loading="eager" src="assets/images/teaser.jpg" width="1200"/>
+</picture>
+<figcaption>
+          We introduce a system for designing modular garment patterns (a) that
+          can be constructed from a shared set of fabric modules (b) into
+          complete garments (c). These garments—such as the trousers shown—can
+          be reconfigured to adjust fit and style, or even fully transformed
+          into a different garment, such as the dress (d), all while reusing the
+          same set of building blocks.
+        </figcaption>
+</figure>
+<article class="paper-content">
+<section aria-labelledby="abstract-heading" class="abstract">
+<h2 id="abstract-heading">Abstract</h2>
+<p>
+            While bodies change over time and trends vary, most store-bought
+            clothing comes in fixed sizes and styles and fails to adapt to these
+            changes. Alterations can enable small changes to otherwise static
+            garments, but these changes often require sewing and are
+            non-reversible. We propose a modular approach to garment design that
+            considers resizing, restyling, and reuse earlier in the design
+            process. Our contributions include a compact set of modules and
+            connectors that form the building blocks of modular garments, a
+            method to decompose a garment into modules via integer linear
+            programming, and a digital design tool that supports modular garment
+            design and simulation. Our user evaluation suggests that our
+            approach to modular design can support the creation of a wide range
+            of garments and can help users transform them across sizes and
+            styles while reusing the same building blocks.
+          </p>
+</section>
+<section aria-labelledby="updates-heading" class="updates">
+<h2 id="updates-heading">Updates</h2>
+<ol class="updates-list">
+
+<li>
+<time class="update-date" datetime="2025-11">Nov '25</time>
+<span>Demoed Refashion at SCF 2025.</span>
+</li>
+<li>
+<time class="update-date" datetime="2025-09">Sep-Oct '25</time>
+<span>Presented Refashion to Stuart Weitzman and Diane von
+                Furstenberg.</span>
+</li>
+</ol>
+</section>
+<section aria-label="Gallery" class="gallery">
+<div class="gallery-grid" id="gallery">
+<a class="gallery-item" data-full="assets/images/gallery/gallery-1.webp" data-index="0" href="#">
+<picture>
+<source srcset="assets/images/gallery/gallery-1.webp" type="image/webp"/>
+<img alt="an overview reconfigurable garments via modular design" height="300" loading="lazy" src="assets/images/gallery/gallery-1.jpg" width="400"/>
+</picture>
+</a>
+<a class="gallery-item" data-full="assets/images/gallery/gallery-2.webp" data-index="1" href="#">
+<picture>
+<source srcset="assets/images/gallery/gallery-2.webp" type="image/webp"/>
+<img alt="same building blocks are used to construct different garments" height="300" loading="lazy" src="assets/images/gallery/gallery-2.jpg" width="400"/>
+</picture>
+</a>
+<a class="gallery-item" data-full="assets/images/gallery/gallery-3.webp" data-index="2" href="#">
+<picture>
+<source srcset="assets/images/gallery/gallery-3.webp" type="image/webp"/>
+<img alt="a design tool is provided to support modular garment design and simulation" height="300" loading="lazy" src="assets/images/gallery/gallery-3.jpg" width="400"/>
+</picture>
+</a>
+<a class="gallery-item" data-full="assets/images/gallery/gallery-4.webp" data-index="3" href="#">
+<picture>
+<source srcset="assets/images/gallery/gallery-4.webp" type="image/webp"/>
+<img alt="users designed garments with detachable, interchangeable, and extensible components" height="300" loading="lazy" src="assets/images/gallery/gallery-4.jpg" width="400"/>
+</picture>
+</a>
+<a class="gallery-item" data-full="assets/images/gallery/gallery-5.webp" data-index="4" href="#">
+<picture>
+<source srcset="assets/images/gallery/gallery-5.webp" type="image/webp"/>
+<img alt="unwanted textiles can be repurposed as building blocks" height="300" loading="lazy" src="assets/images/gallery/gallery-5.jpg" width="400"/>
+</picture>
+</a>
+<a class="gallery-item" data-full="assets/images/gallery/gallery-6.webp" data-index="5" href="#">
+<picture>
+<source srcset="assets/images/gallery/gallery-6.webp" type="image/webp"/>
+<img alt="there are possibilities for exploring patchwork and personalization" height="300" loading="lazy" src="assets/images/gallery/gallery-6.jpg" width="400"/>
+</picture>
+</a>
+</div>
+</section>
+<section aria-label="Video overview" class="video">
+<div class="video-embed">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/WTuEnLu_vJw" title="YouTube video player"></iframe>
+</div>
+</section>
+<section aria-labelledby="cite-heading" class="bibtex">
+<h2 id="cite-heading">BibTeX</h2>
+<div class="bibtex-box">
+<pre><code class="language-bibtex">@inproceedings{lin2025refashion,
+  author    = {Rebecca Lin and Michal Luk{\'a}{\v{c}} and Mackenzie Leake},
+  title     = {Refashion: Reconfigurable Garments via Modular Design},
+  booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST '25)},
+  year      = {2025},
+  month     = sep,
+  address   = {Busan, Republic of Korea},
+  doi       = {10.1145/3746059.3747632},
+  url       = {https://doi.org/10.1145/3746059.3747632},
+  isbn      = {979-8-4007-2037-6/2025/09}
+}</code></pre>
+<button aria-label="Copy BibTeX citation" class="copy-bibtex" data-copied-label="Copied" data-copy-label="Copy" type="button">
+<span aria-hidden="true" class="copy-bibtex__icon"></span>
+</button>
+</div>
+</section>
+<section aria-labelledby="acknowledgements-heading" class="acknowledgements">
+<h2 id="acknowledgements-heading">Acknowledgements</h2>
+<p>
+            We thank Kevin Zhang and Yunhan Dai for assistance with fabrication,
+            Benjamin Chen for feedback, Esther Lin for support during
+            the demo and conference, and Erik D. Demaine for mentorship. This
+            work was supported in part by the MIT Morningside Academy for Design
+            (MAD), an MIT MAKE Design-2-Making Mini-Grant, and an NSERC PGS-D
+            scholarship. We gratefully acknowledge the use of facilities at the
+            CSAIL Machine Shop, the CBA Fab Lab, and the Future Sketches group
+            at the Media Lab.
+          </p>
+</section>
+</article>
+</main>
+<div aria-hidden="true" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+<button aria-label="Close" class="lightbox__close" id="lightbox-close">
+        ×
+      </button>
+<button aria-label="Previous image" class="lightbox__prev" id="lightbox-prev">
+        ❮
+      </button>
+<button aria-label="Next image" class="lightbox__next" id="lightbox-next">
+        ❯
+      </button>
+<div class="lightbox__content">
+<img alt="" class="lightbox__image" id="lightbox-image"/>
+<div class="lightbox__caption" id="lightbox-caption"></div>
+</div>
+</div>
+<footer class="site-footer" role="contentinfo">
+<p>
+<time datetime="2026-05">Updated May 2026</time>
+</p>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
